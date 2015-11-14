@@ -1,0 +1,223 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <TextView android:text="@string/hello_world" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView" />
+
+    <android.support.v7.widget.GridLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        app:columnCount="5"
+        app:rowCount="5"
+        app:useDefaultMargins="true">
+        <Button
+            android:layout_width="0dip"
+            android:layout_height="0dip"
+            android:text="1"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_rowWeight="1"/>
+
+        <Button
+            android:layout_width="0dip"
+            android:layout_height="0dip"
+            android:text="2"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_rowWeight="1"/>
+
+        <Button
+            android:layout_width="0dip"
+            android:layout_height="0dip"
+            android:text="3"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_rowWeight="1"/>
+
+        <Button
+            android:layout_width="0dip"
+            android:layout_height="0dip"
+            android:text="4"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_rowWeight="1"/>
+
+        <Button
+            android:layout_width="0dip"
+            android:layout_height="0dip"
+            android:text="5"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_rowWeight="1"/>
+
+        <Button
+            android:layout_width="0dip"
+            android:layout_height="0dip"
+            android:text="6"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_rowWeight="1"/>
+
+        <Button
+            android:layout_width="0dip"
+            android:layout_height="0dip"
+            android:text="7"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_rowWeight="1"/>
+
+        <Button
+            android:layout_width="0dip"
+            android:layout_height="0dip"
+            android:text="8"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_rowWeight="1"/>
+
+        <Button
+            android:layout_width="0dip"
+            android:layout_height="0dip"
+            android:text="9"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_rowWeight="1"/>
+
+        <Button
+            android:layout_width="0dip"
+            android:layout_height="0dip"
+            android:text="10"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_rowWeight="1"/>
+
+        <Button
+            android:layout_width="0dip"
+            android:layout_height="0dip"
+            android:text="11"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_rowWeight="1"/>
+
+        <Button
+            android:layout_width="0dip"
+            android:layout_height="0dip"
+            android:text="12"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_rowWeight="1"/>
+
+        <Button
+            android:layout_width="0dip"
+            android:layout_height="0dip"
+            android:text="13"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_rowWeight="1"/>
+
+        <Button
+            android:layout_width="0dip"
+            android:layout_height="0dip"
+            android:text="14"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_rowWeight="1"/>
+
+        <Button
+            android:layout_width="0dip"
+            android:layout_height="0dip"
+            android:text="15"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_rowWeight="1"/>
+
+        <Button
+            android:layout_width="0dip"
+            android:layout_height="0dip"
+            android:text="16"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_rowWeight="1"/>
+
+        <Button
+            android:layout_width="0dip"
+            android:layout_height="0dip"
+            android:text="17"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_rowWeight="1"/>
+
+        <Button
+            android:layout_width="0dip"
+            android:layout_height="0dip"
+            android:text="18"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_rowWeight="1"/>
+
+        <Button
+            android:layout_width="0dip"
+            android:layout_height="0dip"
+            android:text="19"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_rowWeight="1"/>
+        <Button
+            android:layout_width="0dip"
+            android:layout_height="0dip"
+            android:text="20"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_rowWeight="1"/>
+
+        <Button
+            android:layout_width="0dip"
+            android:layout_height="0dip"
+            android:text="21"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_rowWeight="1"/>
+
+        <Button
+            android:layout_width="0dip"
+            android:layout_height="0dip"
+            android:text="22"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_rowWeight="1"/>
+
+        <Button
+            android:layout_width="0dip"
+            android:layout_height="0dip"
+            android:text="23"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_rowWeight="1"/>
+
+        <Button
+            android:layout_width="0dip"
+            android:layout_height="0dip"
+            android:text="24"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_rowWeight="1"/>
+
+        <Button
+            android:layout_width="0dip"
+            android:layout_height="0dip"
+            android:text="25"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_rowWeight="1"/>
+
+
+    </android.support.v7.widget.GridLayout>
+
+</RelativeLayout>
