@@ -116,12 +116,13 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
 
         cellAlivecount=0;
         for(int i=0;i<5;i++){
-            if(celltrueisAlive[4-i][i]=false){
+            if(celltrueisAlive[4-i][i]==false){
                 cellAlivecount++;
             }
         }
         if(cellAlivecount==4){
             if(cellcrosstrueisreach[1]==false){
+                /*ここにアニメーションを挿入*/
                 String tststr = Integer.toString(1);
                 Toast.makeText(this, "Reach!crs:"+tststr, Toast.LENGTH_LONG).show();
                 cellcrosstrueisreach[1]=true;
@@ -129,6 +130,7 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
         }
         if(cellAlivecount==5){
             if(cellcrosstrueisbingo[1]==false){
+                /*ここにアニメーションを挿入*/
                 String tststr = Integer.toString(1);
                 Toast.makeText(this, "Bingo!crs:"+tststr, Toast.LENGTH_LONG).show();
                 cellcrosstrueisbingo[1]=true;
@@ -138,12 +140,13 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
 
         cellAlivecount=0;
         for(int i=0;i<5;i++){
-            if(celltrueisAlive[i][i]=false){
+            if(celltrueisAlive[i][i]==false){
                 cellAlivecount++;
             }
         }
         if(cellAlivecount==4){
             if(cellcrosstrueisreach[0]==false){
+                /*ここにアニメーションを挿入*/
                 String tststr = Integer.toString(0);
                 Toast.makeText(this, "Reach!crs:"+tststr, Toast.LENGTH_LONG).show();
                 cellcrosstrueisreach[0]=true;
@@ -151,6 +154,7 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
         }
         if(cellAlivecount==5){
             if(cellcrosstrueisbingo[0]==false){
+                /*ここにアニメーションを挿入*/
                 String tststr = Integer.toString(0);
                 Toast.makeText(this, "Bingo!crs:"+tststr, Toast.LENGTH_LONG).show();
                 cellcrosstrueisbingo[0]=true;
