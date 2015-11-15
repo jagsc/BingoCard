@@ -6,7 +6,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
 
 import java.util.Random;
 
@@ -84,7 +83,8 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
                     int viewId = getResources().getIdentifier(btnidstr,"id",getPackageName());
                     if( v.getId()==viewId){
                         if(celltrueisAlive[i][j]==true) {
-                            btn[i][j].setText("OK");
+                            //btn[i][j].setText("OK");
+                            btn[i][j].setBackgroundResource(R.drawable.droidstamp);
                             celltrueisAlive[i][j] = false;
                             judge_cellstate(i,j);
                         }
