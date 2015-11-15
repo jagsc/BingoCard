@@ -85,6 +85,7 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
                         if(celltrueisAlive[i][j]==true) {
                             //btn[i][j].setText("OK");
                             btn[i][j].setBackgroundResource(R.drawable.droidstamp);
+                            btn[i][j].setAlpha(0.4f);
                             celltrueisAlive[i][j] = false;
                             judge_cellstate(i,j);
                         }

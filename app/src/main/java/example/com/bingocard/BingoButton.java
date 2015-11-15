@@ -15,6 +15,7 @@ public class BingoButton extends Button {
         GradientDrawable drawable = new GradientDrawable();
         drawable.setStroke(2, Color.parseColor("#000000"));
         drawable.setCornerRadius(20);
+        drawa
         this.setPadding(7, 7, 7, 7);
         //--
     }
