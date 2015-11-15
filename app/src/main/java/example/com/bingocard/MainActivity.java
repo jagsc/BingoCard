@@ -7,6 +7,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
+import android.graphics.Color;
 
 import java.util.Random;
 
@@ -43,12 +44,12 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
                 Random rnd = new Random(seed);
                 int temprnd=rnd.nextInt(15)+i*15+1;
                 boolean trueisok = true;
-                    for(int l=0;l<5;l++) {
-                        if (rndnum[l] == temprnd) {
-                            trueisok = false;
-                            break;
-                        }
+                for(int l=0;l<5;l++) {
+                    if (rndnum[l] == temprnd) {
+                        trueisok = false;
+                        break;
                     }
+                }
                 if(trueisok==true){
                     rndnum[k]=temprnd;
                     k++;
@@ -70,25 +71,27 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
             }
         }
         btn[2][2].setText("Free");
+        btn[2][2].setBackgroundColor(Color.CYAN);
     }
 
 
-        public void onClick(View v){
-            for(int i=0;i<5;i++){
-                for(int j=0;j<5;j++){
-                    String btnidstr = "btn_"+Integer.toString(i)+"_"+Integer.toString(j);
-                    int viewId = getResources().getIdentifier(btnidstr,"id",getPackageName());
-                    if( v.getId()==viewId){
-                        if(celltrueisAlive[i][j]==true) {
-                            btn[i][j].setText("OK");
-                            celltrueisAlive[i][j] = false;
-                            judge_cellstate(i,j);
-                        }
-                        break;
+    public void onClick(View v){
+        for(int i=0;i<5;i++){
+            for(int j=0;j<5;j++){
+                String btnidstr = "btn_"+Integer.toString(i)+"_"+Integer.toString(j);
+                int viewId = getResources().getIdentifier(btnidstr,"id",getPackageName());
+                if( v.getId()==viewId){
+                    if(celltrueisAlive[i][j]==true) {
+                        btn[i][j].setText("OK");
+                        btn[i][j].setBackgroundColor(Color.CYAN);
+                        celltrueisAlive[i][j] = false;
+                        judge_cellstate(i,j);
                     }
+                    break;
                 }
             }
         }
+    }
 
     public void judge_cellstate(int x,int y){
         int cellAlivecount=0;
