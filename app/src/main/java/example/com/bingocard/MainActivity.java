@@ -6,7 +6,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
+import android.widget.TextView;
 
 import java.util.Random;
 
@@ -23,10 +23,14 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
     Boolean[]cellcrosstrueisbingo = new Boolean[2];
     Button[][] btn = new Button[5][5];
 
+   // TextView resultTxtview;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        //resultTxtview = (TextView)findViewById(R.id.textView);
 
         cellcrosstrueisreach[0]=false;
         cellcrosstrueisbingo[0]=false;
@@ -91,6 +95,8 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
         }
 
     public void judge_cellstate(int x,int y){
+        int reachcount =0;
+        int bingocount =0;
         int cellAlivecount=0;
         for(int i=0;i<5;i++){
             if(celltrueisAlive[i][y]==false){
@@ -101,7 +107,7 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
             if(cellrowtrueisreach[y]==false) {
                 /*ここにアニメーションを挿入*/
                 String tststr = Integer.toString(y);
-                Toast.makeText(this, "Reach!y:"+tststr, Toast.LENGTH_LONG).show();
+                reachcount++;
                 cellrowtrueisreach[y] = true;
             }
         }
@@ -109,7 +115,7 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
             if(cellrowtrueisbingo[y]==false){
                 /*ここにアニメーションを挿入*/
                 String tststr = Integer.toString(y);
-                Toast.makeText(this, "Bingo!y:"+tststr, Toast.LENGTH_LONG).show();
+                bingocount++;
                 cellrowtrueisbingo[y] = true;
             }
         }
@@ -124,7 +130,7 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
             if(cellcrosstrueisreach[1]==false){
                 /*ここにアニメーションを挿入*/
                 String tststr = Integer.toString(1);
-                Toast.makeText(this, "Reach!crs:"+tststr, Toast.LENGTH_LONG).show();
+                reachcount++;
                 cellcrosstrueisreach[1]=true;
             }
         }
@@ -132,7 +138,7 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
             if(cellcrosstrueisbingo[1]==false){
                 /*ここにアニメーションを挿入*/
                 String tststr = Integer.toString(1);
-                Toast.makeText(this, "Bingo!crs:"+tststr, Toast.LENGTH_LONG).show();
+                bingocount++;
                 cellcrosstrueisbingo[1]=true;
             }
         }
@@ -148,7 +154,7 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
             if(cellcrosstrueisreach[0]==false){
                 /*ここにアニメーションを挿入*/
                 String tststr = Integer.toString(0);
-                Toast.makeText(this, "Reach!crs:"+tststr, Toast.LENGTH_LONG).show();
+                reachcount++;
                 cellcrosstrueisreach[0]=true;
             }
         }
@@ -156,7 +162,7 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
             if(cellcrosstrueisbingo[0]==false){
                 /*ここにアニメーションを挿入*/
                 String tststr = Integer.toString(0);
-                Toast.makeText(this, "Bingo!crs:"+tststr, Toast.LENGTH_LONG).show();
+                bingocount++;
                 cellcrosstrueisbingo[0]=true;
             }
         }
@@ -171,7 +177,7 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
             if(cellcolumntrueisreach[x]==false){
                 /*ここにアニメーションを挿入*/
                 String tststr = Integer.toString(x);
-                Toast.makeText(this, "Reach!x:"+tststr, Toast.LENGTH_LONG).show();
+                reachcount++;
                 cellcolumntrueisreach[x]=true;
             }
         }
@@ -179,9 +185,17 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
             if(cellcolumntrueisbingo[x]==false){
                 /*ここにアニメーションを挿入*/
                 String tststr = Integer.toString(x);
-                Toast.makeText(this, "Bingo!x:"+tststr, Toast.LENGTH_LONG).show();
+                bingocount++;
                 cellrowtrueisbingo[x] = true;
             }
+        }
+        if(reachcount>0){
+           // resultTxtview.setText("reach:"+Integer.toString(reachcount));
+            /*ここにリーチの表示(オーバーレイとか)*/
+        }
+        if(bingocount>0){
+            //resultTxtview.setText("\r\nbingo:"+Integer.toString(bingocount));
+            /*ここにビンゴの表示(オーバーレイとか)*/
         }
     }
 

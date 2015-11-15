@@ -5,22 +5,39 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
 
-    <TextView android:text="@string/hello_world" android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="fill_parent"
+        >
+
+        <ImageView
+            android:id="@+id/headerimage"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/bingo"
+            android:layout_height="0dp"
+            android:layout_width="match_parent"
+            android:layout_weight="1"/>
+
 
     <android.support.v7.widget.GridLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
         app:columnCount="5"
         app:rowCount="5"
         app:useDefaultMargins="true"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="18dp"
         android:layout_marginRight="8dp"
-        android:layout_marginBottom="8dp">
+        android:layout_marginBottom="8dp"
+        android:id="@+id/android.support.v7.widget.GridLayout"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="3">
         <Button
             android:layout_width="0dip"
             android:layout_height="0dip"
@@ -28,7 +45,10 @@
             android:id="@+id/btn_0_0"
             app:layout_columnWeight="1"
             app:layout_gravity="fill"
-            app:layout_rowWeight="1"/>
+            app:layout_rowWeight="1"
+            android:background="@drawable/button_color"
+
+            />
 
         <Button
             android:layout_width="0dip"
@@ -37,7 +57,9 @@
             android:id="@+id/btn_1_0"
             app:layout_columnWeight="1"
             app:layout_gravity="fill"
-            app:layout_rowWeight="1"/>
+            app:layout_rowWeight="1"
+            android:background="@drawable/button_color"
+            />
 
         <Button
             android:layout_width="0dip"
@@ -46,8 +68,9 @@
             android:id="@+id/btn_2_0"
             app:layout_columnWeight="1"
             app:layout_gravity="fill"
-            app:layout_rowWeight="1"/>
-
+            app:layout_rowWeight="1"
+            android:background="@drawable/button_color"
+            />
         <Button
             android:layout_width="0dip"
             android:layout_height="0dip"
@@ -55,7 +78,9 @@
             android:id="@+id/btn_3_0"
             app:layout_columnWeight="1"
             app:layout_gravity="fill"
-            app:layout_rowWeight="1"/>
+            app:layout_rowWeight="1"
+            android:background="@drawable/button_color"
+            />
 
         <Button
             android:layout_width="0dip"
@@ -64,7 +89,9 @@
             android:id="@+id/btn_4_0"
             app:layout_columnWeight="1"
             app:layout_gravity="fill"
-            app:layout_rowWeight="1"/>
+            app:layout_rowWeight="1"
+            android:background="@drawable/button_color"
+            />
 
         <Button
             android:layout_width="0dip"
@@ -73,7 +100,9 @@
             android:id="@+id/btn_0_1"
             app:layout_columnWeight="1"
             app:layout_gravity="fill"
-            app:layout_rowWeight="1"/>
+            app:layout_rowWeight="1"
+            android:background="@drawable/button_color"
+            />
 
         <Button
             android:layout_width="0dip"
@@ -82,7 +111,9 @@
             android:id="@+id/btn_1_1"
             app:layout_columnWeight="1"
             app:layout_gravity="fill"
-            app:layout_rowWeight="1"/>
+            app:layout_rowWeight="1"
+            android:background="@drawable/button_color"
+            />
 
         <Button
             android:layout_width="0dip"
@@ -91,7 +122,8 @@
             android:id="@+id/btn_2_1"
             app:layout_columnWeight="1"
             app:layout_gravity="fill"
-            app:layout_rowWeight="1"/>
+            app:layout_rowWeight="1"
+            android:background="@drawable/button_color"/>
 
         <Button
             android:layout_width="0dip"
@@ -100,7 +132,9 @@
             android:id="@+id/btn_3_1"
             app:layout_columnWeight="1"
             app:layout_gravity="fill"
-            app:layout_rowWeight="1"/>
+            app:layout_rowWeight="1"
+            android:background="@drawable/button_color"
+            />
 
         <Button
             android:layout_width="0dip"
@@ -109,7 +143,9 @@
             android:id="@+id/btn_4_1"
             app:layout_columnWeight="1"
             app:layout_gravity="fill"
-            app:layout_rowWeight="1"/>
+            app:layout_rowWeight="1"
+            android:background="@drawable/button_color"
+            />
 
         <Button
             android:layout_width="0dip"
@@ -118,7 +154,9 @@
             android:id="@+id/btn_0_2"
             app:layout_columnWeight="1"
             app:layout_gravity="fill"
-            app:layout_rowWeight="1"/>
+            app:layout_rowWeight="1"
+            android:background="@drawable/button_color"
+            />
 
         <Button
             android:layout_width="0dip"
@@ -127,7 +165,9 @@
             android:id="@+id/btn_1_2"
             app:layout_columnWeight="1"
             app:layout_gravity="fill"
-            app:layout_rowWeight="1"/>
+            app:layout_rowWeight="1"
+            android:background="@drawable/button_color"
+            />
 
         <Button
             android:layout_width="0dip"
@@ -136,7 +176,9 @@
             android:id="@+id/btn_2_2"
             app:layout_columnWeight="1"
             app:layout_gravity="fill"
-            app:layout_rowWeight="1"/>
+            app:layout_rowWeight="1"
+            android:background="@drawable/button_color"
+            />
 
         <Button
             android:layout_width="0dip"
@@ -145,7 +187,9 @@
             android:id="@+id/btn_3_2"
             app:layout_columnWeight="1"
             app:layout_gravity="fill"
-            app:layout_rowWeight="1"/>
+            app:layout_rowWeight="1"
+            android:background="@drawable/button_color"
+            />
 
         <Button
             android:layout_width="0dip"
@@ -154,7 +198,9 @@
             android:id="@+id/btn_4_2"
             app:layout_columnWeight="1"
             app:layout_gravity="fill"
-            app:layout_rowWeight="1"/>
+            app:layout_rowWeight="1"
+            android:background="@drawable/button_color"
+            />
 
         <Button
             android:layout_width="0dip"
@@ -163,7 +209,9 @@
             android:id="@+id/btn_0_3"
             app:layout_columnWeight="1"
             app:layout_gravity="fill"
-            app:layout_rowWeight="1"/>
+            app:layout_rowWeight="1"
+            android:background="@drawable/button_color"
+            />
 
         <Button
             android:layout_width="0dip"
@@ -172,7 +220,9 @@
             android:id="@+id/btn_1_3"
             app:layout_columnWeight="1"
             app:layout_gravity="fill"
-            app:layout_rowWeight="1"/>
+            app:layout_rowWeight="1"
+            android:background="@drawable/button_color"
+            />
 
         <Button
             android:layout_width="0dip"
@@ -181,7 +231,9 @@
             android:id="@+id/btn_2_3"
             app:layout_columnWeight="1"
             app:layout_gravity="fill"
-            app:layout_rowWeight="1"/>
+            app:layout_rowWeight="1"
+            android:background="@drawable/button_color"
+            />
 
         <Button
             android:layout_width="0dip"
@@ -190,7 +242,9 @@
             android:id="@+id/btn_3_3"
             app:layout_columnWeight="1"
             app:layout_gravity="fill"
-            app:layout_rowWeight="1"/>
+            app:layout_rowWeight="1"
+            android:background="@drawable/button_color"
+            />
         <Button
             android:layout_width="0dip"
             android:layout_height="0dip"
@@ -198,7 +252,9 @@
             android:id="@+id/btn_4_3"
             app:layout_columnWeight="1"
             app:layout_gravity="fill"
-            app:layout_rowWeight="1"/>
+            app:layout_rowWeight="1"
+            android:background="@drawable/button_color"
+            />
 
         <Button
             android:layout_width="0dip"
@@ -207,7 +263,9 @@
             android:id="@+id/btn_0_4"
             app:layout_columnWeight="1"
             app:layout_gravity="fill"
-            app:layout_rowWeight="1"/>
+            app:layout_rowWeight="1"
+            android:background="@drawable/button_color"
+            />
 
         <Button
             android:layout_width="0dip"
@@ -216,7 +274,9 @@
             android:id="@+id/btn_1_4"
             app:layout_columnWeight="1"
             app:layout_gravity="fill"
-            app:layout_rowWeight="1"/>
+            app:layout_rowWeight="1"
+            android:background="@drawable/button_color"
+            />
 
         <Button
             android:layout_width="0dip"
@@ -225,7 +285,9 @@
             android:id="@+id/btn_2_4"
             app:layout_columnWeight="1"
             app:layout_gravity="fill"
-            app:layout_rowWeight="1"/>
+            app:layout_rowWeight="1"
+            android:background="@drawable/button_color"
+            />
 
         <Button
             android:layout_width="0dip"
@@ -234,7 +296,9 @@
             android:id="@+id/btn_3_4"
             app:layout_columnWeight="1"
             app:layout_gravity="fill"
-            app:layout_rowWeight="1"/>
+            app:layout_rowWeight="1"
+            android:background="@drawable/button_color"
+            />
 
         <Button
             android:layout_width="0dip"
@@ -243,9 +307,25 @@
             android:id="@+id/btn_4_4"
             app:layout_columnWeight="1"
             app:layout_gravity="fill"
-            app:layout_rowWeight="1"/>
+            app:layout_rowWeight="1"
+            android:background="@drawable/button_color"
+            />
 
 
     </android.support.v7.widget.GridLayout>
+
+        <ImageView
+            android:id="@+id/footerimage"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/jagstlog"
+            android:layout_height="0dp"
+            android:layout_width="match_parent"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
 
 </RelativeLayout>
