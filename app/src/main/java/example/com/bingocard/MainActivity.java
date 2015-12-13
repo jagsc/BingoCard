@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
     Boolean[]cellcrosstrueisreach = new Boolean[2];
     Boolean[]cellcrosstrueisbingo = new Boolean[2];
     Button[][] btn = new Button[5][5];
-
+//テスト
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
